@@ -58,7 +58,7 @@ function prompt_pete_setup {
   zstyle ':prezto:module:ruby:info:version' format '%F{blue}[%v]%f'
 
   # Define prompts.
-  PROMPT='${editor_info[keymap]} %F{cyan}%c%f ${git_info:+${(e)git_info[prompt]}}'
+  PROMPT='%F{cyan}%c%f ${git_info:+${(e)git_info[prompt]}}${editor_info[keymap]} '
   RPROMPT='${ruby_info[version]}'
 }
 
